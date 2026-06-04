@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function PrivacyPage() {
   return (
@@ -9,7 +10,7 @@ export default function PrivacyPage() {
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center">
               <Link href="/" className="flex-shrink-0">
-                <span className="text-3xl font-extrabold text-[#1A1A1A] tracking-tight">Lifecycle Loop</span>
+                <Image src="/logo-nav.png" alt="Lifecycle Loop" width={180} height={48} className="h-12 w-auto object-contain" />
               </Link>
             </div>
             <div className="hidden md:block">
@@ -25,6 +26,9 @@ export default function PrivacyPage() {
                 </Link>
                 <Link href="/terms" className="text-[#555555] hover:text-[#1A1A1A] px-3 py-2 rounded-md text-sm font-medium">
                   Terms
+                </Link>
+                <Link href="/contact" className="text-[#555555] hover:text-[#1A1A1A] px-3 py-2 rounded-md text-sm font-medium">
+                  Contact
                 </Link>
                 <Link href="/signup" className="bg-[#EFE810] text-[#1A1A1A] hover:bg-[#d4cd00] px-4 py-2 rounded-md text-sm font-semibold">
                   Get Started
@@ -178,7 +182,24 @@ export default function PrivacyPage() {
             We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the &quot;Last Updated&quot; date. You are advised to review this Privacy Policy periodically for any changes.
           </p>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">13. Contact Us</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">13. SMS Communications</h2>
+          <p className="text-gray-600 mb-4">
+            Lifecycle Loop may send SMS (text message) communications to users who have opted in. Our SMS program is limited exclusively to <strong>transactional account notifications</strong>, which may include:
+          </p>
+          <ul className="list-disc pl-6 text-gray-600 mb-6 space-y-2">
+            <li>Account access and onboarding confirmations</li>
+            <li>Recognition and reward activity alerts</li>
+            <li>Account security notifications</li>
+            <li>Program status updates directly related to your account</li>
+          </ul>
+          <p className="text-gray-600 mb-4">
+            <strong>We do not send marketing or promotional SMS messages.</strong> No mobile information will be shared with or sold to third parties for marketing or promotional purposes.
+          </p>
+          <p className="text-gray-600 mb-4">
+            Message and data rates may apply. Message frequency varies based on account activity. To opt out of SMS notifications at any time, reply <strong>STOP</strong> to any message. For help, reply <strong>HELP</strong> or contact us at <a href="mailto:support@trylifecycleloop.com" className="text-[#1A1A1A] hover:text-[#555555]">support@trylifecycleloop.com</a>.
+          </p>
+
+          <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">14. Contact Us</h2>
           <p className="text-gray-600 mb-4">
             If you have any questions about this Privacy Policy or our privacy practices, please contact us:
           </p>
@@ -229,12 +250,20 @@ export default function PrivacyPage() {
                     Terms of Service
                   </Link>
                 </li>
+                <li>
+                  <Link href="/sms-policy" className="text-gray-400 hover:text-white">
+                    SMS Policy
+                  </Link>
+                </li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
               <p className="text-gray-400">
                 support@trylifecycleloop.com
+              </p>
+              <p className="text-gray-400 mt-1">
+                (302) 208-0355
               </p>
               <p className="text-gray-400 mt-2 text-sm">
                 3 Germay Dr, Unit 4 #3226<br />

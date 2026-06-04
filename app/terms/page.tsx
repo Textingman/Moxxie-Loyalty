@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function TermsPage() {
   return (
@@ -9,7 +10,7 @@ export default function TermsPage() {
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center">
               <Link href="/" className="flex-shrink-0">
-                <span className="text-3xl font-extrabold text-[#1A1A1A] tracking-tight">Lifecycle Loop</span>
+                <Image src="/logo-nav.png" alt="Lifecycle Loop" width={180} height={48} className="h-12 w-auto object-contain" />
               </Link>
             </div>
             <div className="hidden md:block">
@@ -25,6 +26,9 @@ export default function TermsPage() {
                 </Link>
                 <Link href="/terms" className="text-[#1A1A1A] hover:text-[#1A1A1A] px-3 py-2 rounded-md text-sm font-medium">
                   Terms
+                </Link>
+                <Link href="/contact" className="text-[#555555] hover:text-[#1A1A1A] px-3 py-2 rounded-md text-sm font-medium">
+                  Contact
                 </Link>
                 <Link href="/signup" className="bg-[#EFE810] text-[#1A1A1A] hover:bg-[#d4cd00] px-4 py-2 rounded-md text-sm font-semibold">
                   Get Started
@@ -292,12 +296,20 @@ export default function TermsPage() {
                     Terms of Service
                   </Link>
                 </li>
+                <li>
+                  <Link href="/sms-policy" className="text-gray-400 hover:text-white">
+                    SMS Policy
+                  </Link>
+                </li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
               <p className="text-gray-400">
                 support@trylifecycleloop.com
+              </p>
+              <p className="text-gray-400 mt-1">
+                (302) 208-0355
               </p>
               <p className="text-gray-400 mt-2 text-sm">
                 3 Germay Dr, Unit 4 #3226<br />

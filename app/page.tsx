@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { Gift, Star, TrendingUp, Users, Award, BarChart3, Repeat, Zap } from 'lucide-react';
+import Image from 'next/image';
+import { Star, TrendingUp, Users, Award, BarChart3, Zap, Heart, CheckCircle } from 'lucide-react';
 
 export default function HomePage() {
   return (
@@ -10,7 +11,7 @@ export default function HomePage() {
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center">
               <Link href="/" className="flex-shrink-0">
-                <span className="text-3xl font-extrabold text-[#1A1A1A] tracking-tight">Lifecycle Loop</span>
+                <Image src="/logo-nav.png" alt="Lifecycle Loop" width={180} height={48} className="h-12 w-auto object-contain" />
               </Link>
             </div>
             <div className="hidden md:block">
@@ -27,8 +28,11 @@ export default function HomePage() {
                 <Link href="/terms" className="text-[#555555] hover:text-[#1A1A1A] px-3 py-2 rounded-md text-sm font-medium">
                   Terms
                 </Link>
+                <Link href="/contact" className="text-[#555555] hover:text-[#1A1A1A] px-3 py-2 rounded-md text-sm font-medium">
+                  Contact
+                </Link>
                 <Link href="/signup" className="bg-[#EFE810] text-[#1A1A1A] hover:bg-[#d4cd00] px-4 py-2 rounded-md text-sm font-semibold">
-                  Get Started
+                  Request Access
                 </Link>
               </div>
             </div>
@@ -41,21 +45,21 @@ export default function HomePage() {
         <div className="text-center">
           <div className="inline-flex items-center bg-[#EFE810] text-[#1A1A1A] px-4 py-2 rounded-full text-sm font-semibold mb-8">
             <Star className="w-4 h-4 mr-2" />
-            The Future of Customer Loyalty
+            The Future of Employee Engagement
           </div>
           <h1 className="text-5xl font-extrabold text-[#1A1A1A] sm:text-6xl md:text-7xl leading-tight">
-            Turn Customers Into
-            <span className="block text-[#EFE810] [-webkit-text-stroke:2px_#1A1A1A]">Loyal Fans</span>
+            Turn Employees Into
+            <span className="block text-[#EFE810] [-webkit-text-stroke:2px_#1A1A1A]">Engaged Champions</span>
           </h1>
           <p className="mt-6 max-w-2xl mx-auto text-xl text-[#555555]">
-            Drive repeat business and deepen customer relationships with our powerful loyalty tracking platform. Reward engagement, track behavior, and grow revenue — all in one place.
+            Recognize effort, reward performance, and build a culture people love — all in one powerful employee engagement platform. Boost morale, reduce turnover, and grow together.
           </p>
           <div className="mt-10 flex justify-center gap-4">
             <Link
               href="/signup"
               className="px-8 py-4 bg-[#EFE810] text-[#1A1A1A] text-lg font-semibold rounded-lg hover:bg-[#d4cd00] transition-colors shadow-md"
             >
-              Start for Free
+              Request Access
             </Link>
             <Link
               href="/about"
@@ -72,20 +76,20 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <p className="text-4xl font-extrabold text-[#EFE810]">5x</p>
-              <p className="text-white/70 mt-2">More likely to repurchase</p>
+              <p className="text-4xl font-extrabold text-[#EFE810]">4x</p>
+              <p className="text-white/70 mt-2">Higher productivity in engaged teams</p>
             </div>
             <div>
-              <p className="text-4xl font-extrabold text-[#EFE810]">67%</p>
-              <p className="text-white/70 mt-2">Higher spend from loyal customers</p>
+              <p className="text-4xl font-extrabold text-[#EFE810]">59%</p>
+              <p className="text-white/70 mt-2">Less turnover with recognition programs</p>
             </div>
             <div>
-              <p className="text-4xl font-extrabold text-[#EFE810]">80%</p>
-              <p className="text-white/70 mt-2">Revenue from top 20% of customers</p>
+              <p className="text-4xl font-extrabold text-[#EFE810]">21%</p>
+              <p className="text-white/70 mt-2">Profitability boost from engaged employees</p>
             </div>
             <div>
-              <p className="text-4xl font-extrabold text-[#EFE810]">25%</p>
-              <p className="text-white/70 mt-2">Profit boost from 5% retention increase</p>
+              <p className="text-4xl font-extrabold text-[#EFE810]">87%</p>
+              <p className="text-white/70 mt-2">Of employees want more recognition</p>
             </div>
           </div>
         </div>
@@ -94,9 +98,9 @@ export default function HomePage() {
       {/* Features Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-[#1A1A1A]">Everything You Need to Build Loyalty</h2>
+          <h2 className="text-4xl font-bold text-[#1A1A1A]">Everything You Need to Engage Your Team</h2>
           <p className="mt-4 text-xl text-[#555555]">
-            A complete loyalty platform built for modern businesses
+            A complete employee engagement platform built for modern workplaces
           </p>
         </div>
 
@@ -104,14 +108,14 @@ export default function HomePage() {
           <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow border border-[#E5E7EB]">
             <div className="flex justify-center mb-4">
               <div className="w-14 h-14 bg-[#EFE810] rounded-full flex items-center justify-center">
-                <Gift className="w-8 h-8 text-[#1A1A1A]" />
+                <Award className="w-8 h-8 text-[#1A1A1A]" />
               </div>
             </div>
             <h3 className="text-xl font-semibold text-[#1A1A1A] text-center mb-3">
-              Points & Rewards
+              Points & Recognition
             </h3>
             <p className="text-[#555555] text-center">
-              Create flexible points programs that reward purchases, referrals, reviews, and any custom action that matters to your business.
+              Reward employees for hitting milestones, going above and beyond, peer recognition, and any custom achievement that matters to your culture.
             </p>
           </div>
 
@@ -122,10 +126,10 @@ export default function HomePage() {
               </div>
             </div>
             <h3 className="text-xl font-semibold text-[#1A1A1A] text-center mb-3">
-              Real-Time Analytics
+              Engagement Analytics
             </h3>
             <p className="text-[#555555] text-center">
-              Track engagement, redemption rates, customer lifetime value, and churn risk with live dashboards and actionable insights.
+              Track participation rates, recognition trends, team morale scores, and at-risk employees with live dashboards and actionable insights.
             </p>
           </div>
 
@@ -136,10 +140,10 @@ export default function HomePage() {
               </div>
             </div>
             <h3 className="text-xl font-semibold text-[#1A1A1A] text-center mb-3">
-              Customer Segmentation
+              Team Segmentation
             </h3>
             <p className="text-[#555555] text-center">
-              Automatically segment customers by tier, spend, frequency, and behavior to deliver personalized experiences at scale.
+              Organize employees by department, tenure, performance tier, and role to deliver personalized recognition experiences at scale.
             </p>
           </div>
         </div>
@@ -149,9 +153,9 @@ export default function HomePage() {
       <section className="bg-[#F9F9F9] py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-[#1A1A1A]">How Loyalty Works</h2>
+            <h2 className="text-4xl font-bold text-[#1A1A1A]">How Employee Engagement Works</h2>
             <p className="mt-4 text-xl text-[#555555]">
-              Get up and running in minutes, not months
+              Get your team energized in minutes, not months
             </p>
           </div>
 
@@ -162,7 +166,7 @@ export default function HomePage() {
                 <div>
                   <h3 className="text-2xl font-bold text-[#1A1A1A] mb-3">Set Up Your Program</h3>
                   <p className="text-lg text-[#555555] leading-relaxed">
-                    Define your rewards structure, tiers, and earning rules. Customize the experience to match your brand in minutes.
+                    Define your recognition structure, reward tiers, and earning rules. Customize the experience to match your company culture in minutes.
                   </p>
                 </div>
               </div>
@@ -170,9 +174,9 @@ export default function HomePage() {
               <div className="flex items-start">
                 <div className="flex-shrink-0 w-12 h-12 bg-[#EFE810] rounded-full flex items-center justify-center font-bold text-[#1A1A1A] text-lg mr-6">2</div>
                 <div>
-                  <h3 className="text-2xl font-bold text-[#1A1A1A] mb-3">Engage Your Customers</h3>
+                  <h3 className="text-2xl font-bold text-[#1A1A1A] mb-3">Recognize Your Team</h3>
                   <p className="text-lg text-[#555555] leading-relaxed">
-                    Customers earn points for every interaction — purchases, referrals, social shares, birthdays, and more.
+                    Employees earn points for every achievement — project completions, peer shoutouts, attendance streaks, birthdays, and more.
                   </p>
                 </div>
               </div>
@@ -180,9 +184,9 @@ export default function HomePage() {
               <div className="flex items-start">
                 <div className="flex-shrink-0 w-12 h-12 bg-[#EFE810] rounded-full flex items-center justify-center font-bold text-[#1A1A1A] text-lg mr-6">3</div>
                 <div>
-                  <h3 className="text-2xl font-bold text-[#1A1A1A] mb-3">Watch Revenue Grow</h3>
+                  <h3 className="text-2xl font-bold text-[#1A1A1A] mb-3">Watch Culture Thrive</h3>
                   <p className="text-lg text-[#555555] leading-relaxed">
-                    Track results in real time. See which rewards drive the most repeat visits and optimize your program for maximum ROI.
+                    Track results in real time. See which programs drive the most engagement and optimize your culture for maximum retention and performance.
                   </p>
                 </div>
               </div>
@@ -194,38 +198,38 @@ export default function HomePage() {
                   <div className="flex items-center">
                     <Award className="w-8 h-8 text-[#EFE810] mr-3" />
                     <div>
-                      <p className="font-semibold">Gold Tier Unlocked</p>
-                      <p className="text-white/60 text-sm">Sarah M. — 2,500 pts</p>
+                      <p className="font-semibold">Top Performer Badge</p>
+                      <p className="text-white/60 text-sm">Sarah M. — Q2 Sales Leader</p>
                     </div>
                   </div>
-                  <span className="text-[#EFE810] font-bold">+250 pts</span>
+                  <span className="text-[#EFE810] font-bold">+500 pts</span>
                 </div>
                 <div className="flex items-center justify-between bg-white/10 rounded-xl p-4">
                   <div className="flex items-center">
-                    <Repeat className="w-8 h-8 text-[#EFE810] mr-3" />
+                    <Heart className="w-8 h-8 text-[#EFE810] mr-3" />
                     <div>
-                      <p className="font-semibold">Repeat Purchase</p>
-                      <p className="text-white/60 text-sm">James K. — 3rd visit</p>
+                      <p className="font-semibold">Peer Recognition</p>
+                      <p className="text-white/60 text-sm">James K. — &quot;Team MVP&quot;</p>
                     </div>
                   </div>
-                  <span className="text-[#EFE810] font-bold">+100 pts</span>
+                  <span className="text-[#EFE810] font-bold">+150 pts</span>
                 </div>
                 <div className="flex items-center justify-between bg-white/10 rounded-xl p-4">
                   <div className="flex items-center">
                     <TrendingUp className="w-8 h-8 text-[#EFE810] mr-3" />
                     <div>
-                      <p className="font-semibold">Revenue This Month</p>
-                      <p className="text-white/60 text-sm">From loyalty members</p>
+                      <p className="font-semibold">Engagement This Month</p>
+                      <p className="text-white/60 text-sm">Across all departments</p>
                     </div>
                   </div>
-                  <span className="text-[#EFE810] font-bold">+34%</span>
+                  <span className="text-[#EFE810] font-bold">+41%</span>
                 </div>
                 <div className="flex items-center justify-between bg-white/10 rounded-xl p-4">
                   <div className="flex items-center">
                     <Zap className="w-8 h-8 text-[#EFE810] mr-3" />
                     <div>
-                      <p className="font-semibold">Referral Bonus</p>
-                      <p className="text-white/60 text-sm">Maria L. referred 3 friends</p>
+                      <p className="font-semibold">Milestone Bonus</p>
+                      <p className="text-white/60 text-sm">Maria L. — 2-Year Anniversary</p>
                     </div>
                   </div>
                   <span className="text-[#EFE810] font-bold">+300 pts</span>
@@ -239,48 +243,74 @@ export default function HomePage() {
       {/* Solutions Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-[#1A1A1A]">Built for Every Business</h2>
+          <h2 className="text-4xl font-bold text-[#1A1A1A]">Built for Every Workplace</h2>
           <p className="mt-4 text-xl text-[#555555]">
-            Whether you&apos;re a local shop or a national brand, loyalty scales with you
+            Whether you&apos;re a startup or an enterprise, engagement scales with you
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
           <div className="border-2 border-[#E5E7EB] rounded-xl p-8 hover:border-[#EFE810] transition-colors">
-            <h3 className="text-xl font-bold text-[#1A1A1A] mb-4">Retail & E-Commerce</h3>
+            <h3 className="text-xl font-bold text-[#1A1A1A] mb-4">Small & Mid-Size Teams</h3>
             <p className="text-[#555555] mb-6">
-              Reward purchases, reduce cart abandonment, and turn one-time buyers into lifelong customers with automated loyalty flows.
+              Build a strong culture from day one. Recognize wins, celebrate milestones, and keep your team motivated as you grow.
             </p>
             <ul className="space-y-2 text-[#555555]">
-              <li className="flex items-center"><span className="w-2 h-2 bg-[#EFE810] rounded-full mr-3"></span>Purchase-based points</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-[#EFE810] rounded-full mr-3"></span>Abandoned cart recovery</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-[#EFE810] rounded-full mr-3"></span>Birthday rewards</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-[#EFE810] rounded-full mr-3"></span>Easy onboarding</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-[#EFE810] rounded-full mr-3"></span>Peer-to-peer recognition</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-[#EFE810] rounded-full mr-3"></span>Birthday & work anniversary rewards</li>
             </ul>
           </div>
 
           <div className="border-2 border-[#EFE810] rounded-xl p-8 bg-[#FFFDE7]">
             <div className="inline-block bg-[#EFE810] text-[#1A1A1A] text-xs font-bold px-3 py-1 rounded-full mb-4">MOST POPULAR</div>
-            <h3 className="text-xl font-bold text-[#1A1A1A] mb-4">Restaurants & Hospitality</h3>
+            <h3 className="text-xl font-bold text-[#1A1A1A] mb-4">Corporate & Enterprise</h3>
             <p className="text-[#555555] mb-6">
-              Drive repeat visits, increase average ticket size, and build a community of regulars who keep coming back.
+              Drive engagement across departments, locations, and remote teams with a unified recognition platform that scales.
             </p>
             <ul className="space-y-2 text-[#555555]">
-              <li className="flex items-center"><span className="w-2 h-2 bg-[#EFE810] rounded-full mr-3"></span>Visit-based rewards</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-[#EFE810] rounded-full mr-3"></span>SMS re-engagement</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-[#EFE810] rounded-full mr-3"></span>Tiered VIP programs</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-[#EFE810] rounded-full mr-3"></span>Multi-department support</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-[#EFE810] rounded-full mr-3"></span>Manager-led recognition</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-[#EFE810] rounded-full mr-3"></span>Advanced analytics & reporting</li>
             </ul>
           </div>
 
           <div className="border-2 border-[#E5E7EB] rounded-xl p-8 hover:border-[#EFE810] transition-colors">
-            <h3 className="text-xl font-bold text-[#1A1A1A] mb-4">Services & Subscriptions</h3>
+            <h3 className="text-xl font-bold text-[#1A1A1A] mb-4">Remote & Hybrid Teams</h3>
             <p className="text-[#555555] mb-6">
-              Reduce churn, reward long-term subscribers, and incentivize referrals to grow your customer base organically.
+              Keep distributed teams connected and motivated. Bridge the gap between remote and in-office employees with digital recognition.
             </p>
             <ul className="space-y-2 text-[#555555]">
-              <li className="flex items-center"><span className="w-2 h-2 bg-[#EFE810] rounded-full mr-3"></span>Retention bonuses</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-[#EFE810] rounded-full mr-3"></span>Referral programs</li>
-              <li className="flex items-center"><span className="w-2 h-2 bg-[#EFE810] rounded-full mr-3"></span>Milestone rewards</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-[#EFE810] rounded-full mr-3"></span>Virtual shoutouts & badges</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-[#EFE810] rounded-full mr-3"></span>SMS & email notifications</li>
+              <li className="flex items-center"><span className="w-2 h-2 bg-[#EFE810] rounded-full mr-3"></span>Team leaderboards</li>
             </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits Section */}
+      <section className="bg-[#F9F9F9] py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-[#1A1A1A]">Why Employees Love Lifecycle Loop</h2>
+            <p className="mt-4 text-xl text-[#555555]">Real rewards for real effort</p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              { icon: <CheckCircle className="w-7 h-7 text-[#1A1A1A]" />, title: 'Instant Recognition', desc: 'Get recognized the moment you achieve something great — no waiting for annual reviews.' },
+              { icon: <Award className="w-7 h-7 text-[#1A1A1A]" />, title: 'Meaningful Rewards', desc: 'Redeem points for gift cards, extra PTO, experiences, and perks that actually matter.' },
+              { icon: <Users className="w-7 h-7 text-[#1A1A1A]" />, title: 'Team Connection', desc: 'Celebrate wins together. Peer recognition builds stronger bonds and a more supportive culture.' },
+              { icon: <TrendingUp className="w-7 h-7 text-[#1A1A1A]" />, title: 'Career Growth', desc: 'Track your achievements, build your recognition history, and showcase your impact over time.' },
+            ].map((item, i) => (
+              <div key={i} className="text-center">
+                <div className="bg-[#EFE810] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  {item.icon}
+                </div>
+                <h3 className="text-lg font-semibold text-[#1A1A1A] mb-2">{item.title}</h3>
+                <p className="text-[#555555]">{item.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -290,16 +320,16 @@ export default function HomePage() {
         <div className="bg-[#1A1A1A] rounded-2xl shadow-2xl overflow-hidden">
           <div className="px-6 py-16 sm:px-12 sm:py-20 text-center">
             <h2 className="text-4xl font-bold text-white mb-6">
-              Ready to Build Real Loyalty?
+              Ready to Build a Culture People Love?
             </h2>
             <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-              Join thousands of businesses using Lifecycle Loop to turn customers into their biggest advocates. Start free, scale as you grow.
+              Join thousands of companies using Lifecycle Loop to recognize, reward, and retain their best people. Request access today.
             </p>
             <Link
               href="/signup"
               className="inline-block px-8 py-4 bg-[#EFE810] text-[#1A1A1A] text-lg font-semibold rounded-lg hover:bg-[#d4cd00] transition-colors shadow-lg"
             >
-              Get Started Free
+              Request Access
             </Link>
           </div>
         </div>
@@ -312,7 +342,7 @@ export default function HomePage() {
             <div>
               <span className="text-2xl font-extrabold text-white tracking-tight">Lifecycle Loop</span>
               <p className="text-gray-400 mt-3">
-                Lifecycle Loop — loyalty tracking software that drives real engagement.
+                Lifecycle Loop — employee engagement software that drives real culture.
               </p>
             </div>
             <div>
@@ -325,7 +355,7 @@ export default function HomePage() {
                 </li>
                 <li>
                   <Link href="/signup" className="text-gray-400 hover:text-white">
-                    Get Started
+                    Request Access
                   </Link>
                 </li>
               </ul>
@@ -343,12 +373,20 @@ export default function HomePage() {
                     Terms of Service
                   </Link>
                 </li>
+                <li>
+                  <Link href="/sms-policy" className="text-gray-400 hover:text-white">
+                    SMS Policy
+                  </Link>
+                </li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
               <p className="text-gray-400">
                 support@trylifecycleloop.com
+              </p>
+              <p className="text-gray-400 mt-1">
+                (302) 208-0355
               </p>
               <p className="text-gray-400 mt-2 text-sm">
                 3 Germay Dr, Unit 4 #3226<br />
