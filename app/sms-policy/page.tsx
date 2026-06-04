@@ -60,7 +60,7 @@ export default function SmsPolicyPage() {
 
           <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">What We Send</h2>
           <p className="text-gray-600 mb-6">
-            Lifecycle Loop <strong>only sends transactional account notifications</strong> via SMS. We do not send marketing, promotional, or advertising messages of any kind.
+            Lifecycle Loop <strong>only sends alert related text messages</strong> via SMS. We do not send marketing, promotional, or advertising messages of any kind.
           </p>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Opt-In</h2>
@@ -89,7 +89,7 @@ export default function SmsPolicyPage() {
 
           <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Data Privacy</h2>
           <p className="text-gray-600 mb-6">
-            <strong>No mobile information will be shared with or sold to third parties for marketing or promotional purposes.</strong> Your phone number and SMS opt-in status are used solely to deliver transactional account notifications as described in this policy and our{' '}
+            <strong>No mobile information will be shared with or sold to third parties for marketing or promotional purposes.</strong> Your phone number and SMS opt-in status are used solely to deliver alert related text messages as described in this policy and our{' '}
             <Link href="/privacy" className="text-[#1A1A1A] hover:text-[#555555] underline">Privacy Policy</Link>.
           </p>
 

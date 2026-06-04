@@ -250,7 +250,7 @@ export default function SignupPage() {
                     onChange={handleChange}
                     className="mt-1 h-4 w-4 text-[#EFE810] focus:ring-[#EFE810] border-gray-300 rounded flex-shrink-0" />
                   <label htmlFor="smsOptIn" className="ml-3 text-sm leading-relaxed text-[#555555]">
-                    By checking this box, you agree to receive transactional account notification text messages from Lifecycle Loop. Reply <strong>STOP</strong> to opt out. Reply <strong>HELP</strong> or email support@trylifecycleloop.com for help. Message and data rates may apply. Opting in is optional and not required to submit this form.
+                    By checking this box and submitting this form, you agree to receive alert related text messages from Lifecycle Loop. I understand I may opt out of SMS communication by replying <strong>STOP</strong>. Reply <strong>HELP</strong> or email <a href="mailto:support@trylifecycleloop.com" className="text-[#1A1A1A] underline">support@trylifecycleloop.com</a> for help. Message and Data rates may apply. Message frequency varies. Carriers are not liable for delayed or undelivered messages. Opting in to SMS is optional and not required to submit this form or to use our services. All messages will be handled by Lifecycle Loop.
                   </label>
                 </div>
               </div>

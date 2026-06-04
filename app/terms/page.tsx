@@ -245,7 +245,50 @@ export default function TermsPage() {
             We reserve the right to modify these Terms at any time. We will notify you of material changes by posting the updated Terms on our website and updating the &quot;Last Updated&quot; date. Your continued use of the Service after changes become effective constitutes acceptance of the modified Terms.
           </p>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">16. Contact Information</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">16. SMS Communications Policy</h2>
+
+          <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">16.1 Overview</h3>
+          <p className="text-gray-600 mb-6">
+            Lifecycle Loop is committed to responsible and transparent SMS communications. This section describes how and when we use SMS (text messaging) to communicate with our users.
+          </p>
+
+          <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">16.2 What We Send</h3>
+          <p className="text-gray-600 mb-6">
+            Lifecycle Loop <strong>only sends alert related text messages</strong> via SMS. We do not send marketing, promotional, or advertising messages of any kind.
+          </p>
+
+          <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">16.3 Opt-In</h3>
+          <p className="text-gray-600 mb-6">
+            SMS notifications are optional. You may opt in to receive transactional SMS messages during the account registration process by checking the SMS opt-in box. Opting in is not required to use the Lifecycle Loop platform.
+          </p>
+
+          <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">16.4 Opt-Out</h3>
+          <p className="text-gray-600 mb-6">
+            You may opt out of SMS notifications at any time by replying <strong>STOP</strong> to any message you receive from us. After opting out, you will no longer receive SMS messages from Lifecycle Loop. To re-enable SMS notifications, contact us at <a href="mailto:support@trylifecycleloop.com" className="text-[#1A1A1A] hover:text-[#555555]">support@trylifecycleloop.com</a>.
+          </p>
+
+          <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">16.5 Help</h3>
+          <p className="text-gray-600 mb-6">
+            For help with SMS messages, reply <strong>HELP</strong> to any message or contact us at <a href="mailto:support@trylifecycleloop.com" className="text-[#1A1A1A] hover:text-[#555555]">support@trylifecycleloop.com</a> or <a href="tel:+13022080355" className="text-[#1A1A1A] hover:text-[#555555]">(302) 208-0355</a>.
+          </p>
+
+          <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">16.6 Message &amp; Data Rates</h3>
+          <p className="text-gray-600 mb-6">
+            Message and data rates may apply depending on your mobile carrier and plan. Message frequency varies based on your account activity. Lifecycle Loop is not responsible for any charges incurred from your mobile carrier.
+          </p>
+
+          <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">16.7 Data Privacy</h3>
+          <p className="text-gray-600 mb-6">
+            <strong>No mobile information will be shared with or sold to third parties for marketing or promotional purposes.</strong> Your phone number and SMS opt-in status are used solely to deliver alert related text messages as described in this section and our{' '}
+            <Link href="/privacy" className="text-[#1A1A1A] hover:text-[#555555] underline">Privacy Policy</Link>.
+          </p>
+
+          <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">16.8 Carrier Disclaimer</h3>
+          <p className="text-gray-600 mb-6">
+            Carriers are not liable for delayed or undelivered messages. Delivery of SMS messages is subject to your mobile carrier&apos;s network availability and coverage.
+          </p>
+
+          <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">17. Contact Information</h2>
           <p className="text-gray-600 mb-4">
             If you have any questions about these Terms, please contact us:
           </p>

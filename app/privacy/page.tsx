@@ -184,7 +184,7 @@ export default function PrivacyPage() {
 
           <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">13. SMS Communications</h2>
           <p className="text-gray-600 mb-4">
-            Lifecycle Loop may send SMS (text message) communications to users who have opted in. Our SMS program is limited exclusively to <strong>transactional account notifications</strong>, which may include:
+            Lifecycle Loop may send SMS (text message) communications to users who have opted in. Our SMS program is limited exclusively to <strong>alert related text messages</strong>, which may include:
           </p>
           <ul className="list-disc pl-6 text-gray-600 mb-6 space-y-2">
             <li>Account access and onboarding confirmations</li>
